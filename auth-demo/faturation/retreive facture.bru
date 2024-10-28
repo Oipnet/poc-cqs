@@ -1,0 +1,23 @@
+meta {
+  name: retreive facture
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{AppUrl}}/api/auth/register
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/ld+json
+}
+
+body:json {
+  {
+    "email": "test16@local.dev",
+    "password": "password",
+    "cliChrono": 1234
+  }
+}
